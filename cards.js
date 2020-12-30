@@ -4,6 +4,26 @@ class Card {
     constructor(suit, value){
         this.suit = suit;
         this.value = value;
+        switch(suit){
+            case '♠':
+                this.ucode = 0x1F0A0;
+                break;
+            case '♥':
+                this.ucode = 0x1F0B0;
+                break;
+            case '♦':
+                this.ucode = 0x1F0C0;
+                break;
+            case '♣':
+                this.ucode = 0x1F0D0;
+                break;
+            default:
+                this.ucode = 0;
+                break;
+        }
+        this.ucode = this.ucode + value;
+        console.log(this.ucode);
+        this.ucode = String.fromCodePoint(this.ucode);
     }
 }
 
