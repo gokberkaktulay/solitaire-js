@@ -1,0 +1,37 @@
+
+
+body{
+    display: grid;
+    grid-template-columns: 20rem auto;
+}
+
+.leftside{
+    margin: 0 auto;
+    background: rgb(3, 70, 3);
+    display: inline-block;
+    font-size: 30rem;
+    border: 5px solid blue;
+}
+
+.stock{
+    margin: 0 auto;
+    background: wheat;
+    display: inline-block;
+    font-size: 30rem;
+    border: 5px solid greenyellow;
+}
+
+.central{
+    font-size: 40rem;
+    border: 5px solid purple;
+}
+
+.foundations{
+    font-size: 30rem;
+    border: 5px solid red;
+}
+
+.tableau{
+    font-size: 30rem;
+    border: 5px solid green;
+}
