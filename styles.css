@@ -2,24 +2,18 @@
 
 body{
     display: grid;
-    grid-template-columns: 20rem auto;
+    grid-template-columns: 30rem auto;
 }
 
 .leftside{
     margin: 0 auto;
     background: rgb(3, 70, 3);
-    display: inline-block;
     font-size: 30rem;
     border: 5px solid blue;
+    display: inline-block;
 }
 
-.stock{
-    margin: 0 auto;
-    background: wheat;
-    display: inline-block;
-    font-size: 30rem;
-    border: 5px solid greenyellow;
-}
+
 
 .central{
     font-size: 40rem;
@@ -34,4 +28,13 @@ body{
 .tableau{
     font-size: 30rem;
     border: 5px solid green;
+}
+
+.cardImg{
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    width: 150px;
 }

@@ -21,9 +21,14 @@ class Card {
                 this.ucode = 0;
                 break;
         }
-        this.ucode = this.ucode + value;
-        console.log(this.ucode);
+        this.ucode = (value >= 12) ? this.ucode + value + 1 : this.ucode + value; //the ucode values contain knight between jack and queen
+        console.log(this.ucode.toString(16));
         this.ucode = String.fromCodePoint(this.ucode);
+    }
+
+    getHTML(){
+        const cardDiv = document.createElement("div");
+        cardDiv.classList.add("card");
     }
 }
 

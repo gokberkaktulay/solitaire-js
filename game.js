@@ -1,5 +1,4 @@
 import Deck from './cards.js';
-
 const deck = new Deck();
 console.log("   Hello");
 var ucode = 0x1f0a1;
@@ -11,3 +10,4 @@ console.log(ucode);
 deck.cards.forEach(element => {
     console.log(element.ucode);
 });
+
