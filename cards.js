@@ -4,6 +4,7 @@ class Card {
     constructor(suit, value){
         this.suit = suit;
         this.value = value;
+        this.hidden = true;
         switch(suit){
             case '♠':
                 this.ucode = 0x1F0A0;
@@ -23,12 +24,26 @@ class Card {
         }
         this.ucode = (value >= 12) ? this.ucode + value + 1 : this.ucode + value; //the ucode values contain knight between jack and queen
         console.log(this.ucode.toString(16));
+        this.address = this.ucode.toString(16);
         this.ucode = String.fromCodePoint(this.ucode);
     }
 
     getHTML(){
-        const cardDiv = document.createElement("div");
-        cardDiv.classList.add("card");
+        let cardDiv = document.createElement("div");
+        cardDiv.classList.add("card","stackCard");
+        
+        let cardImg = document.createElement("img");
+        console.log("PNG-cards-1-3/%s.png",this.address);
+        if(this.hidden){
+            cardImg.src = "SVG-cards-1.3/cardback2.jfif";
+        }
+        else{
+            let adr = 'PNG-cards-1.3/'+this.address+'.png';
+            cardImg.src = (adr);
+        }
+        cardImg.classList.add("cardImg");
+        cardDiv.appendChild(cardImg);
+        return cardDiv;
     }
 }
 

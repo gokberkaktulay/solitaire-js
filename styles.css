@@ -10,23 +10,21 @@ body{
     background: rgb(3, 70, 3);
     font-size: 30rem;
     border: 5px solid blue;
-    display: inline-block;
 }
 
 
 
 .central{
-    font-size: 40rem;
+    display: grid;
+    grid-template-rows: 20rem auto;
     border: 5px solid purple;
 }
 
 .foundations{
-    font-size: 30rem;
     border: 5px solid red;
 }
 
 .tableau{
-    font-size: 30rem;
     border: 5px solid green;
 }
 
@@ -36,5 +34,16 @@ body{
 }
 
 .card{
+    grid-row: 2;
+    min-height: 25px;
+    display: flex;
     width: 150px;
+}
+
+.stackCard{
+    margin-top: -160px;
+}
+
+.wastePile{
+    margin-top: 100px;
 }

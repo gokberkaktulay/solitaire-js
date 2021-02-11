@@ -7,21 +7,15 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="game.js" type="module"></script>
-    <script src="dragevents.js"></script>
-    <script>
-        $( function() {
-          $( ".stock" ).draggable(/*{ revert: true }*/);
-        } );
-        </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="leftside">
-        <div class="stock ui-widget-content card" draggable="true">
+        <div class="stock">
             <img class="cardImg" src="SVG-cards-1.3/cardback2.jfif" alt="cardback">
         </div>
         
-        <div class="wastePile"><div class="card"><img class="cardImg" src="PNG-cards-1.3/1f0a1.png" alt="a"></div></div>
+        <div id="wastePile" class="wastePile"></div>
     </div>
     <div class="central">
         <div class="foundations">b</div>

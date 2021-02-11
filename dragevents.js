@@ -9,5 +9,3 @@ function onDragStart(event) {
       .style
       .backgroundColor = 'yellow';
 }
-
-console.log("a");
